@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+    <head>
+        <title>Rango</title>
+    </head>
+
+    <body>
+        <h1>Rango says...</h1>
+        <div>
+            this tutorial has been put together by Chris Bellingham<br />
+            <strong>{{ boldmessage }}</strong>
+            <br />
+        </div>
+        <div>
+            <a href="/rango/">Index</a>
+            <br />
+            <img src="{% static 'images/adventurecall.jpg' %}" alt="Picture of Limmy" />
+            <br />
+            <img src="{{MEDIA_URL}}cat.jpeg" alt="Picture of a Kat" />
+        </div>
+    </body>
+
+</html>
